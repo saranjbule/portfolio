@@ -924,6 +924,23 @@
 }
 
 @media (max-width: 480px) {
+    .about-description {
+        font-size: 1rem;
+    }
+
+    .degree {
+        font-size: 1rem;
+    }
+
+    .highlight-item {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .stats-card {
+        padding: 1rem;
+    }
+
     .hero-name {
         font-size: 3rem;
     }
@@ -1014,5 +1031,31 @@
 
     .exp-header {
         flex-direction: column;
+    }
+
+    .contact-main {
+        padding: 2rem;
+    }
+
+    .project-card {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .contact-main {
+        padding: 2rem 1.5rem;
+    }
+
+    .project-number {
+        font-size: 1.75rem;
+    }
+
+    .contact-method {
+        padding: 1.25rem 0.75rem;
+    }
+
+    .certification-item {
+        padding: 1.5rem;
     }
 }
