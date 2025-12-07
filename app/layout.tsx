@@ -28,11 +28,11 @@ export const metadata: Metadata = {
         title: 'Saranju Bule – Senior Frontend Engineer & Full-Stack Engineer',
         description:
             'Explore the work, projects, and skills of Frontend Engineer Saranju Bule.',
-        url: 'https://yourdomain.com',
+        url: 'https://saranju.vercel.app/',
         siteName: 'Saranju Bule Portfolio',
         images: [
             {
-                url: 'https://yourdomain.com/og-image.jpg',
+                url: 'https://saranju.vercel.app/',
                 width: 1200,
                 height: 630,
                 alt: 'Saranju Bule Portfolio',
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
         apple: '/favicon.ico',
     },
 
-    metadataBase: new URL('https://yourdomain.com'),
+    metadataBase: new URL('https://saranju.vercel.app/'),
     alternates: {
-        canonical: 'https://yourdomain.com',
+        canonical: 'https://saranju.vercel.app/',
     },
 };
 

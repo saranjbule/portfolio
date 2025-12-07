@@ -32,7 +32,7 @@ const profileData = {
     contact: {
         email: 'saranj.bule@gmail.com',
         phone: '8827891710',
-        website: 'saranju.in',
+        website: 'https://saranju.vercel.app/',
         linkedin: 'https://www.linkedin.com/in/saranju/',
         github: 'https://github.com/saranjbule',
         leetcode: 'https://leetcode.com/u/saranju/',
@@ -519,7 +519,7 @@ export default function Home() {
                                         value: profileData.contact.phone,
                                     },
                                     {
-                                        href: `https://${profileData.contact.website}`,
+                                        href: '/',
                                         icon: Globe,
                                         label: 'Website',
                                         value: profileData.contact.website,
