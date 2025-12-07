@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         siteName: 'Saranju Bule Portfolio',
         images: [
             {
-                url: 'https://saranju.vercel.app/',
+                url: 'https://saranju.vercel.app/android-chrome-512x512.png/',
                 width: 1200,
                 height: 630,
                 alt: 'Saranju Bule Portfolio',
@@ -43,8 +43,8 @@ export const metadata: Metadata = {
     },
 
     icons: {
-        icon: '/favicon.ico',
-        apple: '/favicon.ico',
+        icon: 'https://saranju.vercel.app/android-chrome-192x192.png/',
+        apple: 'https://saranju.vercel.app/apple-touch-icon.png/',
     },
 
     metadataBase: new URL('https://saranju.vercel.app/'),

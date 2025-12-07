@@ -832,10 +832,6 @@
         display: none;
     }
 
-    .toolbar-item {
-        padding: 10px;
-    }
-
     .toolbar-nav {
         gap: 2px;
     }
@@ -847,6 +843,11 @@
 }
 
 @media (max-width: 768px) {
+    .hero-greet {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
     .hero-name {
         font-size: 3.5rem;
     }
@@ -924,11 +925,7 @@
 
 @media (max-width: 480px) {
     .hero-name {
-        font-size: 2.5rem;
-    }
-
-    .hero-title {
-        font-size: 0.95rem;
+        font-size: 3rem;
     }
 
     .about-stats-wrapper {
@@ -977,7 +974,7 @@
     }
 
     .toolbar-item {
-        padding: 8px 4px;
+        padding: 10px 8px;
         flex: 1;
         justify-content: center;
     }
@@ -1012,7 +1009,7 @@
     }
 
     .contact-wrapper {
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
     }
 
     .exp-header {
