@@ -22,6 +22,7 @@ import {
     CodeXml,
     ExternalLink,
     Square,
+    FileUser,
 } from 'lucide-react';
 import { greatVibes } from './fonts';
 import './home.css';
@@ -38,6 +39,7 @@ const profileData = {
         leetcode: 'https://leetcode.com/u/saranju/',
         location: 'Bengaluru, India',
         codesanbox: 'https://codesandbox.io/u/saranj',
+        resume: 'https://drive.google.com/file/d/1MTWxYdngv0faZh1NaxrsH8J4FLfyywko/view?usp=sharing',
     },
     summary: [
         'Front-End Engineer with 4+ years of experience building scalable, high-performance applications using React, TypeScript, and cloud-native tooling. Skilled in UI/UX engineering, performance optimization, SEO architecture, component libraries, CI/CD automation, microfrontends & reusable module development for enterprise platforms.',
@@ -52,7 +54,7 @@ const profileData = {
             'HTML5 / CSS3',
             'SCSS',
             'Tailwind',
-            'React Query',
+            'TanStack Query',
             'Context API',
         ],
         Backend: ['Node.js', 'Express', 'REST APIs', 'Django'],
@@ -580,6 +582,11 @@ export default function Home() {
                                     href: profileData.contact.codesanbox,
                                     icon: Square,
                                     label: 'CodeSanbox',
+                                },
+                                {
+                                    href: profileData.contact.resume,
+                                    icon: FileUser,
+                                    label: 'Resume',
                                 },
                             ].map((social, index) => {
                                 const Icon = social.icon;
