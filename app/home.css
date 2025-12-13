@@ -84,6 +84,7 @@
     width: 100%;
     z-index: 1;
     text-align: center;
+    animation: fadeInSlide 1s ease-in-out 0s 1 normal forwards;
 }
 
 .hero-name {
@@ -111,10 +112,11 @@
 }
 
 .hero-title {
-    font-size: 1.75rem;
+    font-size: 2rem;
     color: var(--text-secondary);
     margin-bottom: 3rem;
     font-weight: 500;
+    letter-spacing: 2px;
 }
 
 .hero-buttons {
@@ -853,7 +855,7 @@
     }
 
     .hero-title {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     .section {
@@ -1057,5 +1059,17 @@
 
     .certification-item {
         padding: 1.5rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(1.5rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

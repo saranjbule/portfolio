@@ -240,6 +240,55 @@ export default function Home() {
         { id: 'contact', label: 'Contact', icon: Send },
     ];
 
+    const contactMethods = [
+        {
+            href: `mailto:${profileData.contact.email}`,
+            icon: Mail,
+            label: 'Email',
+            value: profileData.contact.email,
+        },
+        {
+            href: `tel:${profileData.contact.phone}`,
+            icon: Phone,
+            label: 'Phone',
+            value: profileData.contact.phone,
+        },
+        {
+            href: '/',
+            icon: Globe,
+            label: 'Website',
+            value: profileData.contact.website,
+        },
+    ];
+
+    const socialLinks = [
+        {
+            href: profileData.contact.linkedin,
+            icon: Linkedin,
+            label: 'LinkedIn',
+        },
+        {
+            href: profileData.contact.github,
+            icon: Github,
+            label: 'GitHub',
+        },
+        {
+            href: profileData.contact.leetcode,
+            icon: Code,
+            label: 'LeetCode',
+        },
+        {
+            href: profileData.contact.codesanbox,
+            icon: Square,
+            label: 'CodeSanbox',
+        },
+        {
+            href: profileData.contact.resume,
+            icon: FileUser,
+            label: 'Resume',
+        },
+    ];
+
     return (
         <div className={`portfolio ${isDarkMode ? 'dark' : 'light'}`}>
             {/* Hero Section */}
@@ -253,7 +302,9 @@ export default function Home() {
                     >
                         {profileData.name}
                     </h1>
-                    <h2 className="hero-title">{profileData.title}</h2>
+                    <h2 className={`${greatVibes.className} hero-title`}>
+                        {profileData.title}
+                    </h2>
 
                     <div className="hero-buttons">
                         <button
@@ -507,26 +558,7 @@ export default function Home() {
                                 </p>
                             </div>
                             <div className="contact-methods">
-                                {[
-                                    {
-                                        href: `mailto:${profileData.contact.email}`,
-                                        icon: Mail,
-                                        label: 'Email',
-                                        value: profileData.contact.email,
-                                    },
-                                    {
-                                        href: `tel:${profileData.contact.phone}`,
-                                        icon: Phone,
-                                        label: 'Phone',
-                                        value: profileData.contact.phone,
-                                    },
-                                    {
-                                        href: '/',
-                                        icon: Globe,
-                                        label: 'Website',
-                                        value: profileData.contact.website,
-                                    },
-                                ].map((method, index) => {
+                                {contactMethods.map((method, index) => {
                                     const Icon = method.icon;
                                     return (
                                         <a
@@ -562,33 +594,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div className="contact-social">
-                            {[
-                                {
-                                    href: profileData.contact.linkedin,
-                                    icon: Linkedin,
-                                    label: 'LinkedIn',
-                                },
-                                {
-                                    href: profileData.contact.github,
-                                    icon: Github,
-                                    label: 'GitHub',
-                                },
-                                {
-                                    href: profileData.contact.leetcode,
-                                    icon: Code,
-                                    label: 'LeetCode',
-                                },
-                                {
-                                    href: profileData.contact.codesanbox,
-                                    icon: Square,
-                                    label: 'CodeSanbox',
-                                },
-                                {
-                                    href: profileData.contact.resume,
-                                    icon: FileUser,
-                                    label: 'Resume',
-                                },
-                            ].map((social, index) => {
+                            {socialLinks.map((social, index) => {
                                 const Icon = social.icon;
                                 return (
                                     <a
