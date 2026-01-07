@@ -295,7 +295,7 @@ export default function Home() {
             <section id="home" className="hero">
                 <div className="hero-pattern"></div>
                 <div className="hero-content">
-                    <div className="hero-greet">Hello, Let's Connect!</div>
+                    <div className="hero-greet">Hello, Let's Connect! 👋🏻</div>
 
                     <h1
                         className={`${greatVibes.className} hero-name gradient-text`}
