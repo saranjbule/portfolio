@@ -39,10 +39,10 @@ const profileData = {
         leetcode: 'https://leetcode.com/u/saranju/',
         location: 'Bengaluru, India',
         codesanbox: 'https://codesandbox.io/u/saranj',
-        resume: 'https://drive.google.com/file/d/1MTWxYdngv0faZh1NaxrsH8J4FLfyywko/view?usp=sharing',
+        resume: 'https://drive.google.com/file/d/1jDwJz-YortOxIzigKfchDfr5HOJSxXK_/view?usp=drive_link',
     },
     summary: [
-        'Front-End Engineer with 4+ years of experience building scalable, high-performance applications using React, TypeScript, and cloud-native tooling. Skilled in UI/UX engineering, performance optimization, SEO architecture, component libraries, CI/CD automation, microfrontends & reusable module development for enterprise platforms.',
+        'Front-End Engineer with ~5 years of experience building scalable, high-performance applications using React, TypeScript, and cloud-native tooling. Skilled in UI/UX engineering, performance optimization, SEO architecture, component libraries, CI/CD automation, microfrontends & reusable module development for enterprise platforms.',
         'I’m a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.',
     ],
     skills: {
@@ -58,7 +58,7 @@ const profileData = {
             'Context API',
         ],
         Backend: ['Node.js', 'Express', 'REST APIs', 'Django'],
-        'Cloud & DevOps': ['AWS', 'Docker', 'GitLab', 'GitHub', 'CI/CD'],
+        'Cloud & DevOps': ['AWS', 'Docker', 'GitLab', 'GitHub', 'CI / CD'],
         Databases: ['MySQL', 'MongoDB', 'DynamoDB', 'Redis'],
         Tools: [
             'Git',
@@ -91,7 +91,7 @@ const profileData = {
             achievements: [
                 'Led UI architecture for next-gen F&O Strategy Builder, improving workflow responsiveness by 25%',
                 'Achieved 2× faster rendering through optimized state management, memoization, and code splitting',
-                'Mentored 5 engineers and established frontend development standards across the team',
+                'Mentored 5+ engineers and established frontend development standards across the team',
                 'Built an AI-driven summary pipeline that increased user engagement by 40%',
                 'Improved SEO architecture, routing strategy, and page indexing, contributing to 70% organic growth',
                 'Integrated Freshdesk API, reducing customer resolution time by 50%',
@@ -337,7 +337,7 @@ export default function Home() {
                                     <div className="highlight-text">
                                         <h4>Experience</h4>
                                         <p>
-                                            4+ years building scalable web
+                                            ~5 years building scalable web
                                             applications
                                         </p>
                                     </div>
@@ -367,7 +367,7 @@ export default function Home() {
                         <div className="about-stats-wrapper">
                             <div className="glass-card stats-card">
                                 <div className="stat-number gradient-text">
-                                    4+
+                                    ~5
                                 </div>
                                 <div className="stat-text">
                                     Years Experience
@@ -375,7 +375,7 @@ export default function Home() {
                             </div>
                             <div className="glass-card stats-card">
                                 <div className="stat-number gradient-text">
-                                    5
+                                    5+
                                 </div>
                                 <div className="stat-text">
                                     Engineers Mentored
