@@ -174,6 +174,7 @@ const profileData = {
 export default function Home() {
     const [activeSection, setActiveSection] = useState('home');
     const [isDarkMode, setIsDarkMode] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         const storedTheme = localStorage.getItem('theme');
@@ -422,7 +423,7 @@ export default function Home() {
                                         ))}
                                     </div>
                                 </div>
-                            )
+                            ),
                         )}
                     </div>
                 </div>
@@ -456,7 +457,7 @@ export default function Home() {
                                         {exp.achievements.map(
                                             (achievement, i) => (
                                                 <li key={i}>{achievement}</li>
-                                            )
+                                            ),
                                         )}
                                     </ul>
                                 </div>
@@ -632,7 +633,7 @@ export default function Home() {
                 </div>
             </footer>
 
-            {/* Floating Toolbar - Bottom */}
+            {/* Floating desktop Toolbar */}
             <div className="toolbar">
                 <div className="toolbar-content">
                     <button
@@ -678,6 +679,53 @@ export default function Home() {
                     </button>
                 </div>
             </div>
+
+            {/* Floating mobile menu cta */}
+            <div
+                className="mobile-toolbar"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+                <div className={`burger ${mobileMenuOpen ? 'open' : ''}`}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            {/* Floating mobile menu */}
+            {mobileMenuOpen && (
+                <div className="mobile-menu">
+                    {navItems.map((item) => {
+                        const Icon = item.icon;
+                        return (
+                            <button
+                                key={item.id}
+                                className={`toolbar-item ${
+                                    activeSection === item.id ? 'active' : ''
+                                }`}
+                                onClick={() => {
+                                    scrollToSection(item.id);
+                                    setMobileMenuOpen(false);
+                                }}
+                            >
+                                <Icon size={18} />
+                                <span>{item.label}</span>
+                            </button>
+                        );
+                    })}
+
+                    <button
+                        className="toolbar-item"
+                        onClick={() => {
+                            toggleTheme();
+                            setMobileMenuOpen(false);
+                        }}
+                    >
+                        {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
+                        <span>Theme</span>
+                    </button>
+                </div>
+            )}
         </div>
     );
 }
