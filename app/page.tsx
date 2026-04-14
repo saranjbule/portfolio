@@ -548,7 +548,7 @@ export default function Home() {
                             <div className="contact-header-text">
                                 <h3>
                                     Let's work{' '}
-                                    <i className="gradient-text">together</i>
+                                    <i className="gradient-text">together </i>
                                     🎉
                                 </h3>
                                 <p>
