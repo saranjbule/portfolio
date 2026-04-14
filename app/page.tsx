@@ -311,8 +311,7 @@ export default function Home() {
                             className="btn btn-primary"
                             onClick={() => scrollToSection('contact')}
                         >
-                            <Sparkles size={18} />
-                            Let's Collaborate
+                            Let's Collaborate ✨
                         </button>
                     </div>
                 </div>
@@ -550,6 +549,7 @@ export default function Home() {
                                 <h3>
                                     Let's work{' '}
                                     <i className="gradient-text">together</i>
+                                    🎉
                                 </h3>
                                 <p>
                                     Let's build something amazing together. Feel
