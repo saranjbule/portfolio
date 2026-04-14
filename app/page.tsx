@@ -705,7 +705,6 @@ export default function Home() {
                                 }`}
                                 onClick={() => {
                                     scrollToSection(item.id);
-                                    setMobileMenuOpen(false);
                                 }}
                             >
                                 <Icon size={18} />
@@ -718,7 +717,6 @@ export default function Home() {
                         className="toolbar-item"
                         onClick={() => {
                             toggleTheme();
-                            setMobileMenuOpen(false);
                         }}
                     >
                         {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
