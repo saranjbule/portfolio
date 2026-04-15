@@ -114,7 +114,7 @@ const profileData = {
             period: 'Jan 2021 – June 2021',
             date: '2021',
             achievements: [
-                'Build & Optimized web and cloud application, resulting in a 15% increase in process efficiency',
+                'Build & Optimized web and cloud applications, resulting in a 15% increase in process efficiency',
                 'Achieved 100% on-time delivery while strengthening documentation and client communication skills',
                 'Collaborated with senior engineers to enhance problem-solving effectiveness by 40%',
             ],
@@ -153,7 +153,7 @@ const profileData = {
             name: 'EventSync',
             tech: 'AWS, React, TypeScript, Material UI, SCSS',
             description:
-                'Cloud-based employee and event management platform on AWS to optimize resource allocation and facilitate efficient workforce.',
+                'Cloud-based employee and event management platform on AWS to optimize resource allocation and facilitate an efficient workforce.',
         },
     ],
     education: {
